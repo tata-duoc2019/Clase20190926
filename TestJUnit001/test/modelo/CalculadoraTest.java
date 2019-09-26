@@ -44,9 +44,7 @@ public class CalculadoraTest {
     public void testSumar() {
         System.out.println("Sumar");
         Calculadora instance = new Calculadora(8,2);
-        int expResult = 10;
-        int result = instance.Sumar();
-        assertEquals(expResult, result);
+        assertTrue(instance.Sumar()==10);
     }
 
     /**
@@ -56,9 +54,7 @@ public class CalculadoraTest {
     public void testRestar() {
         System.out.println("Restar");
         Calculadora instance = new Calculadora(8,2);
-        int expResult = 6;
-        int result = instance.Restar();
-        assertEquals(expResult, result);
+        assertTrue(instance.Restar()==6);
     }
 
     /**
@@ -68,9 +64,7 @@ public class CalculadoraTest {
     public void testMultiplicar() {
         System.out.println("Multiplicar");
         Calculadora instance = new Calculadora(8,2);
-        int expResult = 16;
-        int result = instance.Multiplicar();
-        assertEquals(expResult, result);
+        assertTrue(instance.Multiplicar()==16);
     }
 
     /**
@@ -80,9 +74,7 @@ public class CalculadoraTest {
     public void testDividir() {
         System.out.println("Dividir");
         Calculadora instance = new Calculadora(8,2);
-        int expResult = 4;
-        int result = instance.Dividir();
-        assertEquals(expResult, result);
+        assertTrue(instance.Dividir()==4);
     }
     
 }
