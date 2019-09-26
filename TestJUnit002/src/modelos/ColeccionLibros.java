@@ -17,11 +17,25 @@ public class ColeccionLibros {
         return this.libros.add(libro);
     }
     
-    public boolean  Modificar(){
+    public boolean  Modificar(Libro libro){
+        for(int i=0;i<libros.size();i++){
+            if(libros.get(i).getCodigo().equals(libro.getCodigo())){
+                libros.get(i).setCodigo(libro.getCodigo()); // es optativo
+                libros.get(i).setTitulo(libro.getTitulo());
+                libros.get(i).setAutor(libro.getAutor());
+                return true; 
+            }            
+        }
         return false;
     }
     
-    public boolean  Eliminar(){
+    public boolean  Eliminar(String codigo){
+        for(int i=0;i<libros.size();i++){
+            if(libros.get(i).getCodigo().equals(codigo)){
+                libros.remove(i);
+                return true; 
+            }            
+        }
         return false;
     }
     
